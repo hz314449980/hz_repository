@@ -197,7 +197,7 @@
 		</dependency>
 
 
-		<dependency>
+		<dependency >
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.1.0</version>
@@ -208,6 +208,21 @@
 	<build>
 		<finalName>maven_ssm</finalName>
 		<plugins>
+
+
+
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.2</version>
+					<configuration>
+						<port>
+							8080
+						</port>
+						<path>/</path>
+					</configuration>
+				</plugin>
+
 
 			<!-- 资源文件拷贝插件 -->
 			<plugin>
@@ -230,17 +245,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<!-- 配置Tomcat插件 -->
-				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.2</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-  
+
+
   
   	</build>
   

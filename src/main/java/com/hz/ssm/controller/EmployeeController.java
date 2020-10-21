@@ -19,6 +19,9 @@ public class EmployeeController {
 	@ResponseBody
 	@RequestMapping("/findEmpByPage")
 	public PageBean<Employee> findEmpByPage(Integer indexpage){
+
+
+		System.out.println("=======================");
 	
 		PageBean<Employee>  pageBean = employeeService.findEmpByPage(indexpage);
 		

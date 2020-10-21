@@ -5,13 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.core.convert.converter.Converter;
-/**
- * 自定义一个字符串转日期的全局类
- * 
- * @author Administrator
- *S  source  源
- *T  target  目标
- */
+
 public class CustomeGlobleStrtoDateConvertor implements Converter<String, Date>{
 
 	@Override
